@@ -1,0 +1,31 @@
+{
+  "name": "subscription-billing-tests",
+  "version": "1.0.0",
+  "description": "Object-oriented automated test suite for a Subscription & Billing Service",
+  "scripts": {
+    "build": "tsc --noEmit -p .",
+    "typecheck": "tsc --noEmit -p .",
+    "lint": "eslint . --ext .ts",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "validate:setup": "jest tests/specs/00-setup-validation.spec.ts",
+    "validate": "npm run lint && npm run build && npm test"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.22.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.25",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^20.19.43",
+    "@types/supertest": "^6.0.3",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "eslint": "^8.57.1",
+    "jest": "^29.7.0",
+    "supertest": "^7.3.1",
+    "ts-jest": "^29.4.15",
+    "typescript": "^5.9.3"
+  }
+}
